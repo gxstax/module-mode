@@ -1,10 +1,14 @@
 package main
 
 import (
-  _ "github.com/go-redis/redis/v8" // "-" 为空导入
+  "fmt"
   "github.com/google/uuid"
   "github.com/sirupsen/logrus"
 )
+
+func init()  {
+  fmt.Println("init invoked")
+}
 
 func main() {
   logrus.Println("hello, go module mode")
